@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.render('index.ejs', { names:['Abe', 'George', 'Sue']});
+  res.render('index.ejs', { names: 'Walker'}, {skills: ['HTML', 'CSS', 'Javascript', 'Node.js/Express.js']
 });
 
 const server = http.createServer(app);

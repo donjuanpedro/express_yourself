@@ -6,7 +6,19 @@
     </head>
     <body>
     <% names.forEach((name) => { %>
-    <h3>Hello, my name is <%= name %></h3>
+    <h3>Hello, my name is <%= name %> I live in Austin, TX.</h3>
     <% }) %>
+    <ul>My Skills are:
+        <% skills.forEach((skill) => { %>
+        <li><%= skill %></li>
+        <li><%= skill %></li>
+        <li><%= skill %></li>
+        <li><%= skill %></li>
+        <% }) %>
+    </ul>
+    <ul>My Hobbies are:
+      <li>Camping</li>
+      <li>Cooking</li>
+      <li>Reading</li>
 </body>
 </html>

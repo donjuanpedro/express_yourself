@@ -19,7 +19,8 @@ app.get('/', (req, res, next) => {
     ghAvatar: avatar,
     name:'Walker',
     skills: ['HTML', 'CSS', 'Javascript', 'Express.js'],
-    hobbies: ['Reading', 'Camping', 'Cooking', 'Coding']
+    hobbies: ['Reading', 'Camping', 'Cooking', 'Coding'],
+    quote: '"They don\'t think it be like it is, but it do."-Oscar Gamble'
     });
   });
 });

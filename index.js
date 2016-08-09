@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
   res.render('index.ejs', { name:'Walker'});
 });
 
-
 console.log(__dirname);
 
 const server = http.createServer(app);

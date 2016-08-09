@@ -12,7 +12,7 @@
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
         <!--My Styles-->
-        <link rel="stylesheet" href="css/style.css" type="style/text">
+        <link rel="stylesheet" href="public/style.css" type="style/text">
 
         <!--minified Javascript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -23,21 +23,21 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-6 text-center" id="profilepic">
-          <img src="http://walkerlyle.com/images/ranger6.JPG" class="img-thumbnail" width="304" height="236">
+          <img src="<%= ghAvatar %>" class="img-thumbnail">
         </div>
         <div class="col-xs-6" id="profile">
           <h3>Hello, my name is <%= name %></h3>
-          <ul>My skills are:
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Express.js</li>
+          <h4>My skills are:</h4>
+          <ul>
+            <% skills.forEach((skill) => { %>
+            <li><%= skill %></li>
+            <% }) %>
           </ul>
-          <ul>My hobbies are:
-            <li>Reading</li>
-            <li>Camping</li>
-            <li>Cooking</li>
-            <li>Coding</li>
+          <h4>My hobbies are:</h4>
+          <ul>
+            <% hobbies.forEach((hobby) => { %>
+            <li><%= hobby %></li>
+            <% }) %>
           </ul>
         </div>
       </div>
